@@ -25,6 +25,7 @@ const Trailer = () => {
           width="70%"
           height="100vh"
           url={`https://www.youtube.com/watch?v=${officialTrailer.key}`}
+          
         />
       ) : (
         <p className="text-white text-3xl modtext font-bold">

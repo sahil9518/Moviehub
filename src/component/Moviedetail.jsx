@@ -13,6 +13,7 @@ import { removemovie } from "../store/reducer/MovieSlice";
 import Horizantalcard from "../template/Horizantalcard";
 import noimg from "../../public/noimg.jpg";
 
+
 const Moviedetail = () => {
   const dispatch = useDispatch();
   const { id } = useParams();

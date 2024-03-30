@@ -48,7 +48,7 @@ const TopNav = () => {
             {searchdone?.map((cv) => {
               return (
                 <Link
-                  to={`/${cv.media_type === 'movie' ? 'movie' : 'tvshow'}/detail/${cv.id}`}
+                  to={`/${cv.media_type === 'movie' ? 'movie' : cv.media_type === 'tv' ? 'tvshow' : 'people'}/detail/${cv.id}`}
                   key={cv.id}
                   className="hover:text-black hover:bg-zinc-400 duration-300 font-semibold text-zinc-600 inline-block  w-[100%] md:p-3  lg:p-10 flex justify-start item-center border-b-2 border-zinc-100"
                 >

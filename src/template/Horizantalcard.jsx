@@ -27,7 +27,7 @@ const Horizantalcard = ({
         )}
       </div>
 
-      <div className="flex gap-3 overflow-x-auto ml-3">
+      <div className="flex gap-3 overflow-x-auto ml-2">
         {data &&
           data.map((cv, ind) => {
             return (
@@ -65,7 +65,7 @@ const Horizantalcard = ({
 
                       {isseason && (
                         <p className="w-[80%] ml-2">
-                          {cv?.overview?.slice(0, 70)}...
+                          {cv?.overview?.slice(0, 10)}...
                           <span className="text-zinc-400 ">more</span>
                         </p>
                       )}
